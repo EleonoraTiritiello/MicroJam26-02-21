@@ -15,6 +15,8 @@ public class Platform : MonoBehaviour
                 Vector2 velocity = rb2D.velocity;
                 velocity.y = jumpForce;
                 rb2D.velocity = velocity;
+
+                Destroy(gameObject);
             }
         }
     }
