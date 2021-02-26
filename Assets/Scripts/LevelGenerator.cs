@@ -10,7 +10,7 @@ public class LevelGenerator : MonoBehaviour
     public float maxY = 1.5f;
 
 
-    // Start is called before the first frame update
+    //generate random platforms to create a map 
     void Start()
     {
         Vector3 spawnPosition = new Vector3();
@@ -22,11 +22,5 @@ public class LevelGenerator : MonoBehaviour
             Instantiate(platformP, spawnPosition, Quaternion.identity);
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

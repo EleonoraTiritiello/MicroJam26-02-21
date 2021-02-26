@@ -3,7 +3,6 @@
 public class Platform : MonoBehaviour
 {
     public float jumpForce = 10f;
-    Player player;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,11 +16,6 @@ public class Platform : MonoBehaviour
                 velocity.y = jumpForce;
                 rb2D.velocity = velocity;
             }
-        }
-
-        if (player)
-        {
-            Destroy(gameObject);
         }
     }
 
